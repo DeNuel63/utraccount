@@ -1,0 +1,23 @@
+# Building the CovTrack Model for object tracking
+
+After cloning the repo, to run the COVTrack Model
+- Enter the CovTrack_Model folder
+- Extract the uot100 dataset from https://www.kaggle.com/datasets/landrykezebou/uot100-underwater-object-tracking-dataset/data, then create a folder "uot100/original" and and place its content in there
+- Run the scripts.py file that is in the root CoveTrack_Model folder
+-To run the model enter the COVTrack folder in terminal:
+    run this in terminal : 
+        export LD_LIBRARY_PATH=/usr/lib/wsl/lib:/usr/lib/x86_64-linux-gnu:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
+    then run this is in terminal:
+        for video in ../uot100/processed/*; do
+            video_name=$(basename "$video" | cut -d. -f1)
+            echo "Processing $video_name..."
+            python tools/inference.py \
+                configs/ovtrack-custom/ovtrack_r50.py \
+                saved_models/ovtrack/ovtrack_vanilla_clip_prompt.pth \
+                --video "$video" \
+                --out_frame_dir "../outputs/frames" \
+                --out_video_dir "../outputs/videos" \
+                --thickness 2 \
+                --vis_thr 0.01
+        done
