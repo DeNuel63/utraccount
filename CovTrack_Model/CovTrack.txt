@@ -2,8 +2,13 @@
 
 After cloning the repo, to run the COVTrack Model
 - Enter the CovTrack_Model folder
+
 - Extract the uot100 dataset from https://www.kaggle.com/datasets/landrykezebou/uot100-underwater-object-tracking-dataset/data, then create a folder "uot100/original" and and place its content in there
+
 - Run the scripts.py file that is in the root CoveTrack_Model folder
+
+- Unzip the saved_models folder and place it in the CovTrack_Model/COVTrack folder
+
 -To run the model enter the COVTrack folder in terminal:
     run this in terminal : 
         export LD_LIBRARY_PATH=/usr/lib/wsl/lib:/usr/lib/x86_64-linux-gnu:/usr/local/cuda/lib64:$LD_LIBRARY_PATH
