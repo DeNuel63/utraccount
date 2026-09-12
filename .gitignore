@@ -27,3 +27,10 @@ Thumbs.db
 work_dirs/
 runs/
 outputs/
+
+
+data/
+artifacts/
+checkpoints/
+wandb/
+.ipynb_checkpoints/
