@@ -1,0 +1,29 @@
+{
+  "schema_version": "utraccount.detection-batch/v1",
+  "sequence_id": "mft25_001",
+  "frame_index": 42,
+  "frame": {
+    "uri": "drive://utraccount/processed/mft25_001/frame_000042.jpg",
+    "width_px": 1920,
+    "height_px": 1080,
+    "timestamp_ms": 1400
+  },
+  "source": {
+    "model_name": "CountGD++",
+    "model_version": "replace-with-checkpoint-id",
+    "prompt": "fish",
+    "confidence_threshold": 0.35,
+    "box_format": "xywh_center",
+    "coordinate_space": "pixel",
+    "raw_output_uri": "drive://utraccount/artifacts/raw/mft25_001/frame_000042.json"
+  },
+  "detections": [
+    {
+      "detection_id": "mft25_001-000042-000",
+      "bbox_xywh_center": [764.5, 389.0, 116.0, 84.0],
+      "label": "fish",
+      "confidence": 0.91,
+      "ground_truth_instance_id": null
+    }
+  ]
+}

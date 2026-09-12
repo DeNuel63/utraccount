@@ -1,0 +1,23 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://utraccount.local/contracts/run-manifest/v1",
+  "title": "U-TracCount Run Manifest v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["manifest_version", "run_id", "model_version", "checkpoint_sha256", "dataset_name", "dataset_version", "split", "prompt", "confidence_threshold", "runtime", "created_at_utc"],
+  "properties": {
+    "manifest_version": {"const": "utraccount.run-manifest/v1"},
+    "run_id": {"type": "string", "minLength": 1},
+    "model_version": {"type": "string", "minLength": 1},
+    "checkpoint_sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "source_archive_sha256": {"type": ["string", "null"], "pattern": "^[A-Fa-f0-9]{64}$"},
+    "dataset_name": {"type": "string", "minLength": 1},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "split": {"enum": ["train", "validation", "test"]},
+    "prompt": {"type": "string", "minLength": 1},
+    "confidence_threshold": {"type": "number", "minimum": 0, "maximum": 1},
+    "random_seed": {"type": ["integer", "null"]},
+    "runtime": {"type": "object", "minProperties": 1, "additionalProperties": {"type": "string"}},
+    "created_at_utc": {"type": "string", "format": "date-time"}
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "dataset_name": "REPLACE_WITH_APPROVED_UNDERWATER_DATASET",
+  "dataset_version": "REPLACE_WITH_VERSION",
+  "licence": "REPLACE_WITH_CONFIRMED_LICENCE",
+  "intended_use": "CountGD++ validation and counting/localisation evaluation",
+  "train_ids": ["sequence_train_001"],
+  "validation_ids": ["sequence_validation_001"],
+  "test_ids": ["sequence_test_001"],
+  "label_types": ["frame-level count", "bounding box"],
+  "preprocessing": ["Record all resizing and box-coordinate transformations before use"]
+}

@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://utraccount.local/contracts/dataset-register/v1",
+  "title": "U-TracCount Dataset Register v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["dataset_name", "dataset_version", "licence", "intended_use", "train_ids", "validation_ids", "test_ids", "label_types", "preprocessing"],
+  "properties": {
+    "dataset_name": {"type": "string", "minLength": 1},
+    "dataset_version": {"type": "string", "minLength": 1},
+    "licence": {"type": "string", "minLength": 1},
+    "intended_use": {"type": "string", "minLength": 1},
+    "train_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "validation_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "test_ids": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}, "uniqueItems": true},
+    "label_types": {"type": "array", "minItems": 1, "items": {"type": "string", "minLength": 1}},
+    "preprocessing": {"type": "array", "items": {"type": "string"}}
+  }
+}

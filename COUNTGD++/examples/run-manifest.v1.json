@@ -1,0 +1,20 @@
+{
+  "manifest_version": "utraccount.run-manifest/v1",
+  "run_id": "countgdplusplus-deepfish-validation-baseline-001",
+  "model_version": "countgd_plusplus.pth",
+  "checkpoint_sha256": "0000000000000000000000000000000000000000000000000000000000000000",
+  "source_archive_sha256": null,
+  "dataset_name": "DeepFish",
+  "dataset_version": "REPLACE_WITH_DATASET_VERSION",
+  "split": "validation",
+  "prompt": "fish",
+  "confidence_threshold": 0.23,
+  "random_seed": 42,
+  "runtime": {
+    "python": "3.10.x",
+    "pytorch": "REPLACE_WITH_VERSION",
+    "cuda": "REPLACE_WITH_VERSION",
+    "gpu": "REPLACE_WITH_GPU_MODEL"
+  },
+  "created_at_utc": "2026-09-08T00:00:00+00:00"
+}
