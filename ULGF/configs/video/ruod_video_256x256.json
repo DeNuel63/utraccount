@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0",
+  "width": 256,
+  "height": 256,
+  "frames": 8,
+  "fps": 10.0,
+  "motion": {
+    "model": "bounded_random_acceleration",
+    "boundary_policy": "reflect",
+    "max_speed_box_fraction": 0.15,
+    "max_acceleration_box_fraction": 0.02,
+    "object_count_policy": "fixed"
+  }
+}

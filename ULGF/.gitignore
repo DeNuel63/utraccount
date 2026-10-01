@@ -1,0 +1,81 @@
+# Python, environments and editor state.
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+
+# External model weights and dataset samples stay available locally.
+/assets/checkpoint/
+/assets/smoke/
+assets/checkpoint/
+assets/smoke/
+**/baseline/assets/
+*.bin
+*.safetensors
+*.ckpt
+*.pth
+*.pt
+*.onnx
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+
+# Private experimental inputs and generated previews.
+/experiments/*/runs/
+/experiments/*/runs/
+/experiments/*/previews/
+
+experiments/*/reviews/
+experiments/*/previews/
+experiments/*/reviews/
+
+# Credentials and runtime logs.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials*.json
+service-account*.json
+*.log
+
+
+# Local history and artifacts are deliberately kept outside the upload set.
+/_local_archive/
+/outputs/
+/work_dirs/
+/runs/
+_local_archive/
+
+
+# Experiment outputs
+work_dirs/
+runs/
+outputs/
+
+
+data/
+artifacts/
+checkpoints/
+wandb/
+# TensorBoard and training logs
+**/logs/
+events.out.tfevents.*
