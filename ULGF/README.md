@@ -10,6 +10,10 @@ Original model and pipeline sources are retained.
 
 ## Status
 
+Recorded engineering-run outcomes and checkpoint-loading instructions:
+[Training results](docs/TRAINING_RESULTS.md). The 100-update continuation did not
+demonstrate improved quality; video validation remains incomplete.
+
 - Safe still-image inference with validated inputs and separate outputs.
 - CPU layout sequences with bounded motion, stable IDs and schema validation.
 - Training contract, validation and checkpoint/resume utilities; real-model GPU
