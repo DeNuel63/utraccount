@@ -1,0 +1,45 @@
+{
+  "inspection_date": "2026-10-08",
+  "inspection_method": "Shared Google Drive browser UI",
+  "ulgf_source": {
+    "folder_id": "1HWmUH_TrwJu1EnvLNPn8hP5wNRUEWEvz",
+    "observed_name": "ULGF-main"
+  },
+  "ulgf_assets": {
+    "folder_id": "1P_xchKqFvSNmAvF8WBOFC-aKBoUU7XzB",
+    "observed_name": "ULGF-assets",
+    "observed_subfolders": ["checkpoints", "datasets", "runtime-cache"],
+    "checkpoint_folder_id": "1SDKEvnny2XsPbV8VRplwBgWykCuARnDF",
+    "observed_checkpoint_entries": [
+      "engineering-step100-20261005T031541382461Z",
+      "engineering-step100-20261006T155435837337Z",
+      "ruod_256_bz16 (shortcut)",
+      "diffusion_pytorch_model.bin (shortcut)"
+    ],
+    "checkpoint_selected": false,
+    "mounted_path_verified": false,
+    "checkpoint_contents_verified": false
+  },
+  "countgd_assets": {
+    "folder_id": "13dTLgChr-RAvoU6n-nLYwDzOUUMrjnuI",
+    "observed_name": "CountGD",
+    "checkpoint_filename": "countgd_plusplus.pth",
+    "checkpoint_displayed_size": "1.16 GB",
+    "additional_observed_files": ["countgd-colab-code.zip", "UOT100.egg"],
+    "mounted_path_verified": false,
+    "checkpoint_loaded": false
+  },
+  "result_folders": [
+    {"folder_id": "1Tzxlk57jEJGnKcjY-ciKdNNGwMq-Aypy", "observed_name": "CountGD_training_results"},
+    {"folder_id": "1wpacOL0Zxuq3rJhyaiTMENJRERq6wfR2", "observed_name": "CountGD_training_results_API_20260922_101826"},
+    {"folder_id": "1F8JOrAPxuMmsJm5e2OXcEUP-3FgsI9TF", "observed_name": "CountGD_training_results", "observation": "No file rows visible"}
+  ],
+  "colab_notebook_ids": ["1ad6ev0rMksUFoDC7G7uiWkU3wet6agFs", "1iaD82kdH4ldCu0UacXXLWgydIesj-Dp8"],
+  "execution_access": {
+    "google_session_signed_in": false,
+    "colab_runtime_connected": false,
+    "colab_observation": "Loading or blank pages; navigation and accessibility timeouts",
+    "google_sign_in_observation": "net::ERR_NAME_NOT_RESOLVED",
+    "real_model_pipeline_executed": false
+  }
+}

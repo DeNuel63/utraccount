@@ -56,7 +56,7 @@ def init_model(config, checkpoint=None, device="cuda:0", cfg_options=None):
     return model
 
 
-def inference_model(model, imgs, frame_id):
+def inference_model(model, imgs, frame_id, external_detections=None):
     if isinstance(imgs, (list, tuple)):
         is_batch = True
     else:
@@ -103,6 +103,11 @@ def inference_model(model, imgs, frame_id):
 
     # forward the model
     with torch.no_grad():
+        if external_detections is not None:
+            from .external_detections import track_external_detections
+            if len(imgs) != 1 or len(data['img']) != 1:
+                raise ValueError('External tracking requires one frame and one test scale')
+            return track_external_detections(model, data['img'][0], data['img_metas'][0], external_detections)
         results = model(return_loss=False, rescale=True, **data)
 
     return results

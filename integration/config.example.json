@@ -1,0 +1,20 @@
+{
+  "clip_manifest": "/content/drive/MyDrive/ULGF/sequence/manifest.json",
+  "output": "../outputs/connected-run-001",
+  "prompt": "fish",
+  "classes": {"holothurian": 0, "echinus": 1, "scallop": 2, "starfish": 3, "fish": 4, "corals": 5, "diver": 6, "cuttlefish": 7, "turtle": 8, "jellyfish": 9},
+  "confidence_threshold": 0.23,
+  "countgd": {
+    "python": "/content/countgd-env/bin/python",
+    "repository": "../COUNTGD++/CountGDPlusPlus-main/CountGDPlusPlus-main",
+    "checkpoint": "/content/drive/MyDrive/CountGDPlusPlus/checkpoint.pth",
+    "device": "cuda"
+  },
+  "covtrack": {
+    "custom_vocabulary": true,
+    "python": "/content/covtrack-env/bin/python",
+    "config": "../CovTrack_Model/COVTrack/configs/uncertainty-ovtrack-teta/ovtrack_r50_ctao_train.py",
+    "checkpoint": "/content/drive/MyDrive/COVTrack/ctao_public.pth",
+    "device": "cuda:0"
+  }
+}
