@@ -82,7 +82,7 @@ def inference_model(model, imgs, frame_id, external_detections=None):
             data = dict(img=img, frame_id=frame_id)
         else:
             # add information into dict
-            data = dict(img_info=dict(filename=img, frame_id=frame_id), img_prefix=None)
+            data = dict(img_info=dict(filename=img, frame_id=frame_id), img_prefix=None, frame_id=frame_id)
         # build the data pipeline
 
         data = test_pipeline(data)
